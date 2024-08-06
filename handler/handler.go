@@ -1,23 +1,16 @@
 package handler
 
-import "github.com/gin-gonic/gin"
+import (
+	"github.com/NatalNW7/gopportunities/config"
+	"gorm.io/gorm"
+)
 
-func CreateOpeningHandler(ctx *gin.Context){
-	
-}
+var (
+	logger *config.Logger
+	db *gorm.DB
+)
 
-func ShowOpeningHandler(ctx *gin.Context){
-
-}
-
-func UpdateOpeningHandler(ctx *gin.Context){
-
-}
-
-func DeleteOpeningHandler(ctx *gin.Context){
-
-}
-
-func ListOpeningsHandler(ctx *gin.Context){
-
+func InitializeHandler(){
+	logger = config.GetLogger("handler")
+	db = config.GetSQLite()
 }
