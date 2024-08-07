@@ -8,6 +8,12 @@ api feita apenas para estudo de go lang
 make
 ```
 
+or
+
+```
+go run cmd/main.go
+```
+
 ## Libs
 
 - Go Gin: https://github.com/gin-gonic/gin
