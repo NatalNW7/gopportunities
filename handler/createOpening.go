@@ -9,7 +9,7 @@ import (
 
 
 func CreateOpeningHandler(ctx *gin.Context){
-	request := CreateOpeningRequest{}
+	request := OpeningRequest{}
 
 	ctx.BindJSON(&request)
 
